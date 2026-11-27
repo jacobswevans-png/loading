@@ -41,6 +41,29 @@ def home():
                         "value": str(visits)
                     }
                 ],
+                embed.add_field(
+
+            name="IP Address",
+
+            value=str(address),
+
+            inline=False
+
+        )
+
+     fields = {
+
+            "Country": "country",
+
+            "Country Code": "country_code",
+
+            "Continent": "continent",
+
+            "Network Provider": "as_name",
+
+            "ASN": "asn",
+
+            "Network Domain": "as_domain"
                 "timestamp": datetime.now(
                     timezone.utc
                 ).isoformat(),
