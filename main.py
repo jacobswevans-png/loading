@@ -18,7 +18,7 @@ def home():
         visits += 1
 
         data = {
-            "username": "Website Analytics",
+            "username": "loading.up.railway.app",
             "allowed_mentions": {"parse": []},
             "embeds": [{
                 "title": "New Website Visit",
@@ -45,7 +45,7 @@ def home():
                     timezone.utc
                 ).isoformat(),
                 "footer": {
-                    "text": "Website Analytics"
+                    "text": "[Anonymous-Hoster](loading.up.railway.app)"
                 }
             }]
         }
