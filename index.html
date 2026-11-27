@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    import requests
+
+response = requests.get(
+    "https://opengraph.io/api/3.0/site/https%3A%2F%2Floading.up.railway.app%2F?accept_lang=auto&auto_proxy=true&auto_render=true&retry=true&max_retries=3",
+    headers={"api-key": "f7b879bb-8ba3-4754-8ab7-cdd50c2c10bc"},
+)
+
+print(response.json())
     <meta property="og:title" content="Discord" />
     <meta property="og:description" content="A brief summary of your page." />
     <meta property="og:image" content="https://loading.up.railway.app" />
